@@ -1,0 +1,39 @@
+<p>Place each keyword on an individual line, then select your concatenation options.</p>
+<form name="get_permutations" method="post" action="/results">
+  <textarea rows="12" cols="35" wrap="physical" name="word-list-a" placeholder="Word-list 'A' goes here"></textarea>
+  <textarea rows="12" cols="35" wrap="physical" name="word-list-b" placeholder="Word-list 'B' goes here"></textarea>
+  <textarea rows="12" cols="35" wrap="physical" name="word-list-c" placeholder="Word-list 'C' goes here"></textarea>
+
+  <div class="form-options">
+    <label> <input type="checkbox" name="concatenation-options[a]" value="true" /> Include Column A<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[b]" value="true" /> Include Column B<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[c]" value="true" /> Include Column C<br /> </label>
+  </div>
+
+  <div class="form-options">
+    <label> <input type="checkbox" name="concatenation-options[a_b]" value="true" /> Concatenate A with B<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[b_a]" value="true" /> Concatenate B with A<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[a_c]" value="true" /> Concatenate A with C<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[c_a]" value="true" /> Concatenate C with A<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[b_c]" value="true" /> Concatenate B with C<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[c_b]" value="true" /> Concatenate C with B<br /> </label>
+  </div>
+
+  <div class="form-options">
+    <label> <input type="checkbox" name="concatenation-options[a_b_c]" value="true" /> Concatenate A with B with C<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[c_b_a]" value="true" /> Concatenate C with B with A<br /> </label>
+  </div>
+
+  <div class="form-options">
+    <label> <input type="checkbox" name="concatenation-options[a_c_b]" value="true" /> Concatenate A with C with B<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[b_c_a]" value="true" /> Concatenate B with C with A<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[b_a_c]" value="true" /> Concatenate B with A with C<br /> </label>
+    <label> <input type="checkbox" name="concatenation-options[c_a_b]" value="true" /> Concatenate C with A with B<br /> </label>
+  </div>
+
+  <div class="form-options">
+    <label> <input type="checkbox" name="concatenation-options[downcase]" value="true" /> Return all results as lower case words<br /> </label>
+  </div>
+  <input type="submit" id="get-permutations" value="Get Permutations">
+</form>
+<p>This can take a minute or so.</p>

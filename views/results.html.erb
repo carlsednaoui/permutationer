@@ -1,0 +1,24 @@
+<h2>You have succesfully created <%= @total_words%> keywords.</h2>
+
+<div>
+  <button type="button" id="copy-results">Copy Results</button>
+</div>
+
+<textarea rows="15" cols="35" id="results">
+<%= @final_results%>
+</textarea>
+
+<!-- Copy to clipboard using zClip -->
+<script>
+  $(document).ready(function(){
+    $('#copy-results').zclip({
+      path:'javascript/ZeroClipboard.swf',
+      copy:$('#results').text(),
+      afterCopy:function(){
+        $('#copy-results').css('background','green');
+        $('#copy-results').css('color','white');
+        $('#copy-results').text("Results Copied");
+      }
+    });
+  });
+</script>
