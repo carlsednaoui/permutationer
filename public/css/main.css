@@ -21,7 +21,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    background: url('../images/bcg.png');
+    background: #fbfcfe;
 }
 
 /*
@@ -94,10 +94,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#wrapper {
-    margin-left: 10%;
-}
-
 #keyword-input {
     margin-top: 30px;
 }
@@ -109,34 +105,72 @@ textarea {
 
 input[type="submit"], button {
     background: #8CE376;
-    padding: 8px;
-    margin-bottom: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
     -moz-border-radius: 15px;
     border-radius: 5px;
 }
 
 h1, h2 {
-    margin-bottom: 0px;
+    margin-bottom: 15px;
+    margin-top: 0;
 }
 
-h1 a {
+header a, footer a {
     text-decoration: none;
-    color: black;
+    color: #fbfcfe;
+    border-bottom: 1px solid #fbfcfe;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+.logo {
+    margin-right: 10px;
 }
 
 h2 {
     font-size: 1em;
-    margin-top: 0px;
-    margin-bottom: 30px;
     font-weight: normal;
 }
 
+header, footer {
+    background: #466ce7;
+    height: 125px;
+    color: #fbfcfe;
+    padding-left: 50px;
+    padding-top: 30px;
+}
 
+#main {
+    color: #466ce7;
+    padding-left: 50px;
+    padding-top: 25px;
+}
 
+textarea {
+    width: 250px;
+    height: 300px;
+    margin-top: 10px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 
+::-webkit-input-placeholder { 
+    color: #466ce7;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+}
 
-
-
+.notice {
+    font-style: italic;   
+}
 
 
 /* ==========================================================================

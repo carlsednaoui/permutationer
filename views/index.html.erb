@@ -1,8 +1,8 @@
 <p>Place each keyword on an individual line, then select your concatenation options.</p>
 <form name="get_permutations" method="post" action="/results">
-  <textarea rows="12" cols="35" wrap="physical" name="word-list-a" placeholder="Word-list 'A' goes here"></textarea>
-  <textarea rows="12" cols="35" wrap="physical" name="word-list-b" placeholder="Word-list 'B' goes here"></textarea>
-  <textarea rows="12" cols="35" wrap="physical" name="word-list-c" placeholder="Word-list 'C' goes here"></textarea>
+  <textarea name="word-list-a" placeholder="Word-list 'A' goes here"></textarea>
+  <textarea name="word-list-b" placeholder="Word-list 'B' goes here"></textarea>
+  <textarea name="word-list-c" placeholder="Word-list 'C' goes here"></textarea>
 
   <div class="form-options">
     <label> <input type="checkbox" name="concatenation-options[a]" value="true" /> Include Column A<br /> </label>
@@ -35,5 +35,5 @@
     <label> <input type="checkbox" name="concatenation-options[downcase]" value="true" /> Return all results as lower case words<br /> </label>
   </div>
   <input type="submit" id="get-permutations" value="Get Permutations">
+  <p class="notice">This can take a minute or so.</p>
 </form>
-<p>This can take a minute or so.</p>
